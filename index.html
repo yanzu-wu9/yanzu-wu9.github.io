@@ -195,7 +195,7 @@
 <h3 id="查询指定表的建表语句"><a href="#查询指定表的建表语句" class="headerlink" title="查询指定表的建表语句"></a>查询指定表的建表语句</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ SHOW CREATE TABLE 表名;</span><br></pre></td></tr></table></figure>
 
 
-<h2 id="DDL-表操作-创建"><a href="#DDL-表操作-创建" class="headerlink" title="DDL-表操作-创建"></a>DDL-表操作-创建</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ CREATE TABLE 表明(</span><br><span class="line">    字段1 字段1类型[COMMENT <span class="string">&#x27;字段注释&#x27;</span>],</span><br><span class="line">    字段2 字段2类型[COMMENT <span class="string">&#x27;字段注释&#x27;</span>],</span><br><span class="line">    字段3 字段3类型[COMMENT <span class="string">&#x27;字段注释&#x27;</span>]</span><br><span class="line">    ......,</span><br><span class="line">    字段n 字段n类型[COMMENT <span class="string">&#x27;字段注释&#x27;</span>]</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<h2 id="DDL-表操作-创建"><a href="#DDL-表操作-创建" class="headerlink" title="DDL-表操作-创建"></a>DDL-表操作-创建</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ CREATE TABLE 表名(</span><br><span class="line">    字段1 字段1类型[COMMENT <span class="string">&#x27;字段注释&#x27;</span>],</span><br><span class="line">    字段2 字段2类型[COMMENT <span class="string">&#x27;字段注释&#x27;</span>],</span><br><span class="line">    字段3 字段3类型[COMMENT <span class="string">&#x27;字段注释&#x27;</span>]</span><br><span class="line">    ......,</span><br><span class="line">    字段n 字段n类型[COMMENT <span class="string">&#x27;字段注释&#x27;</span>]</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 
 
 <h2 id="DDL-表操作-修改"><a href="#DDL-表操作-修改" class="headerlink" title="DDL-表操作-修改"></a>DDL-表操作-修改</h2><h3 id="添加字段"><a href="#添加字段" class="headerlink" title="添加字段"></a>添加字段</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ALTER TABLE 表名 ADD 字段名 类型(长度) [COMMENT <span class="string">&#x27;注释&#x27;</span>] [约束];</span><br></pre></td></tr></table></figure>
@@ -206,6 +206,14 @@
 
 
 <h3 id="修改字段名称和字段类型"><a href="#修改字段名称和字段类型" class="headerlink" title="修改字段名称和字段类型"></a>修改字段名称和字段类型</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ALTER TABLE 表名 CHANGE 旧字段名  新字段名 类型(长度) [COMMENT <span class="string">&#x27;注释&#x27;</span>] [约束];</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="删除字段"><a href="#删除字段" class="headerlink" title="删除字段"></a>删除字段</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ALTER TABLE 表名 DROP 字段名 ;</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改表名"><a href="#修改表名" class="headerlink" title="修改表名"></a>修改表名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ALTER TABLE 表名 RENAME TO 新表名;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 DROP TABLE [IF EXISTS]表名;</span><br><span class="line">2 TRUNCATE TABLE 表名;</span><br></pre></td></tr></table></figure>
       
 
       
