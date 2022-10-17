@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>DataGrip 环境下的数据库学习笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="DML-数据操作语言 插入表格信息insert into user(id, name, age, gender) values (1,’张三’,18,’男’);insert into user values (2,’李四’,19,’男’);insert into user values (3,’王舞’,21,’女’),(4,’孙六’,20,’男’),(5,’王陆’,21,’男’);  修改表格信">
+  <meta name="description" content="DML-数据操作语言 插入表格信息—bashinsert into user(id, name, age, gender) values (1,’张三’,18,’男’);insert into user values (2,’李四’,19,’男’);insert into user values (3,’王舞’,21,’女’),(4,’孙六’,20,’男’),(5,’王陆’,21,’男’);">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DataGrip 环境下的数据库学习笔记">
 <meta property="og:url" content="http://example.com/2022/10/17/DataGrip-%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="DML-数据操作语言 插入表格信息insert into user(id, name, age, gender) values (1,’张三’,18,’男’);insert into user values (2,’李四’,19,’男’);insert into user values (3,’王舞’,21,’女’),(4,’孙六’,20,’男’),(5,’王陆’,21,’男’);  修改表格信">
+<meta property="og:description" content="DML-数据操作语言 插入表格信息—bashinsert into user(id, name, age, gender) values (1,’张三’,18,’男’);insert into user values (2,’李四’,19,’男’);insert into user values (3,’王舞’,21,’女’),(4,’孙六’,20,’男’),(5,’王陆’,21,’男’);">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-10-17T02:21:29.000Z">
-<meta property="article:modified_time" content="2022-10-17T02:22:12.143Z">
+<meta property="article:modified_time" content="2022-10-17T02:26:03.351Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -176,15 +176,18 @@
       
         <hr>
 <h2 id="DML-数据操作语言"><a href="#DML-数据操作语言" class="headerlink" title="DML-数据操作语言"></a>DML-数据操作语言</h2><hr>
-<h1 id="插入表格信息"><a href="#插入表格信息" class="headerlink" title="插入表格信息"></a>插入表格信息</h1><p>insert into user(id, name, age, gender) values (1,’张三’,18,’男’);<br>insert into user values (2,’李四’,19,’男’);<br>insert into user values (3,’王舞’,21,’女’),(4,’孙六’,20,’男’),(5,’王陆’,21,’男’);</p>
+<h1 id="插入表格信息"><a href="#插入表格信息" class="headerlink" title="插入表格信息"></a>插入表格信息</h1><p>—bash<br>insert into user(id, name, age, gender) values (1,’张三’,18,’男’);<br>insert into user values (2,’李四’,19,’男’);<br>insert into user values (3,’王舞’,21,’女’),(4,’孙六’,20,’男’),(5,’王陆’,21,’男’);</p>
 <hr>
-<h1 id="修改表格信息"><a href="#修改表格信息" class="headerlink" title="修改表格信息"></a>修改表格信息</h1><p>update user set name&#x3D;’张闪’ where id&#x3D;1;<br>update user set name&#x3D;’李思’, age&#x3D;28, gender&#x3D;’女’ where id&#x3D;2;<br>update user set age&#x3D;18;</p>
+<h1 id="修改表格信息"><a href="#修改表格信息" class="headerlink" title="修改表格信息"></a>修改表格信息</h1><p>—bash<br>update user set name&#x3D;’张闪’ where id&#x3D;1;<br>update user set name&#x3D;’李思’, age&#x3D;28, gender&#x3D;’女’ where id&#x3D;2;<br>update user set age&#x3D;18;</p>
 <hr>
-<h1 id="删除表格信息"><a href="#删除表格信息" class="headerlink" title="删除表格信息"></a>删除表格信息</h1><p>delete from user where gender&#x3D;’女’;<br>delete from user;</p>
+<h1 id="删除表格信息"><a href="#删除表格信息" class="headerlink" title="删除表格信息"></a>删除表格信息</h1><p>—bash<br>delete from user where gender&#x3D;’女’;<br>delete from user;</p>
 <hr>
 <hr>
-<h2 id="DQL-数据查询语言"><a href="#DQL-数据查询语言" class="headerlink" title="DQL-数据查询语言"></a>DQL-数据查询语言</h2><hr>
-<h1 id="查询指定字段"><a href="#查询指定字段" class="headerlink" title="查询指定字段"></a>查询指定字段</h1><h2 id="select-name-gender-from-user"><a href="#select-name-gender-from-user" class="headerlink" title="select name, gender from user;"></a>select name, gender from user;</h2><h1 id="查询返回所有字段"><a href="#查询返回所有字段" class="headerlink" title="查询返回所有字段"></a>查询返回所有字段</h1><h2 id="select-from-user"><a href="#select-from-user" class="headerlink" title="select * from user;"></a>select * from user;</h2>
+<h2 id="DQL-数据查询语言"><a href="#DQL-数据查询语言" class="headerlink" title="DQL-数据查询语言"></a>DQL-数据查询语言</h2><p>—bash</p>
+<h1 id="查询指定字段"><a href="#查询指定字段" class="headerlink" title="查询指定字段"></a>查询指定字段</h1><hr>
+<h2 id="select-name-gender-from-user"><a href="#select-name-gender-from-user" class="headerlink" title="select name, gender from user;"></a>select name, gender from user;</h2><h1 id="查询返回所有字段"><a href="#查询返回所有字段" class="headerlink" title="查询返回所有字段"></a>查询返回所有字段</h1><p>—bash<br>select * from user;</p>
+<hr>
+
       
 
       
