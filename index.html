@@ -172,19 +172,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<h2 id="DML-数据操作语言"><a href="#DML-数据操作语言" class="headerlink" title="DML-数据操作语言"></a>DML-数据操作语言</h2><hr>
-<h1 id="插入表格信息"><a href="#插入表格信息" class="headerlink" title="插入表格信息"></a>插入表格信息</h1><p>—bash<br>insert into user(id, name, age, gender) values (1,’张三’,18,’男’);<br>insert into user values (2,’李四’,19,’男’);<br>insert into user values (3,’王舞’,21,’女’),(4,’孙六’,20,’男’),(5,’王陆’,21,’男’);</p>
+        <h1 id="DML-数据操作语言"><a href="#DML-数据操作语言" class="headerlink" title="DML-数据操作语言"></a>DML-数据操作语言</h1><hr>
+<h3 id="插入表格信息"><a href="#插入表格信息" class="headerlink" title="插入表格信息"></a>插入表格信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">insert into user(<span class="built_in">id</span>, name, age, gender) values (1,<span class="string">&#x27;张三&#x27;</span>,18,<span class="string">&#x27;男&#x27;</span>);</span><br><span class="line">insert into user values (2,<span class="string">&#x27;李四&#x27;</span>,19,<span class="string">&#x27;男&#x27;</span>);</span><br><span class="line">insert into user values (3,<span class="string">&#x27;王舞&#x27;</span>,21,<span class="string">&#x27;女&#x27;</span>),(4,<span class="string">&#x27;孙六&#x27;</span>,20,<span class="string">&#x27;男&#x27;</span>),(5,<span class="string">&#x27;王陆&#x27;</span>,21,<span class="string">&#x27;男&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="修改表格信息"><a href="#修改表格信息" class="headerlink" title="修改表格信息"></a>修改表格信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">update user <span class="built_in">set</span> name=<span class="string">&#x27;张闪&#x27;</span> <span class="built_in">where</span> <span class="built_in">id</span>=1;</span><br><span class="line">update user <span class="built_in">set</span> name=<span class="string">&#x27;李思&#x27;</span>, age=28, gender=<span class="string">&#x27;女&#x27;</span> <span class="built_in">where</span> <span class="built_in">id</span>=2;</span><br><span class="line">update user <span class="built_in">set</span> age=18;</span><br></pre></td></tr></table></figure>
+<h3 id="删除表格信息"><a href="#删除表格信息" class="headerlink" title="删除表格信息"></a>删除表格信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">delete from user <span class="built_in">where</span> gender=<span class="string">&#x27;女&#x27;</span>;</span><br><span class="line">delete from user;</span><br></pre></td></tr></table></figure>
+
 <hr>
-<h1 id="修改表格信息"><a href="#修改表格信息" class="headerlink" title="修改表格信息"></a>修改表格信息</h1><p>—bash<br>update user set name&#x3D;’张闪’ where id&#x3D;1;<br>update user set name&#x3D;’李思’, age&#x3D;28, gender&#x3D;’女’ where id&#x3D;2;<br>update user set age&#x3D;18;</p>
-<hr>
-<h1 id="删除表格信息"><a href="#删除表格信息" class="headerlink" title="删除表格信息"></a>删除表格信息</h1><p>—bash<br>delete from user where gender&#x3D;’女’;<br>delete from user;</p>
-<hr>
-<hr>
-<h2 id="DQL-数据查询语言"><a href="#DQL-数据查询语言" class="headerlink" title="DQL-数据查询语言"></a>DQL-数据查询语言</h2><p>—bash</p>
-<h1 id="查询指定字段"><a href="#查询指定字段" class="headerlink" title="查询指定字段"></a>查询指定字段</h1><hr>
-<h2 id="select-name-gender-from-user"><a href="#select-name-gender-from-user" class="headerlink" title="select name, gender from user;"></a>select name, gender from user;</h2><h1 id="查询返回所有字段"><a href="#查询返回所有字段" class="headerlink" title="查询返回所有字段"></a>查询返回所有字段</h1><p>—bash<br>select * from user;</p>
-<hr>
+<h1 id="DQL-数据查询语言"><a href="#DQL-数据查询语言" class="headerlink" title="DQL-数据查询语言"></a>DQL-数据查询语言</h1><h2 id="字段查询"><a href="#字段查询" class="headerlink" title="字段查询"></a>字段查询</h2><hr>
+<h3 id="查询指定字段"><a href="#查询指定字段" class="headerlink" title="查询指定字段"></a>查询指定字段</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select name, gender from user;</span><br></pre></td></tr></table></figure>
+<h3 id="查询返回所有字段"><a href="#查询返回所有字段" class="headerlink" title="查询返回所有字段"></a>查询返回所有字段</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from user;</span><br></pre></td></tr></table></figure>
 
       
 
